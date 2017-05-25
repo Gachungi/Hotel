@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dc20cf"
+    tools:context="com.example.rahee.hotel.MainActivity">
+
+    <TextView
+        android:id="@+id/hotels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffffff"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="17dp"
+        android:text="List of Hotels"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/list"
+        style="@style/Widget.AppCompat.Light.ListView.DropDown"
+        android:layout_width="179dp"
+        android:layout_height="395dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp"
+
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <Button
+        android:id="@+id/totest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/list"
+        android:layout_alignStart="@+id/list"
+        android:layout_below="@+id/list"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:text="To test" />
+
+</RelativeLayout>
